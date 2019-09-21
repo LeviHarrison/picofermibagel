@@ -30,42 +30,43 @@ if (guess.length() == 3) {
   if (guesschar[0] == num1) {
     a = "P";
   }
+  else if (guesschar[0] == num2) {
+	a = "F";
+  }
+  else if (guesschar[0] == num3) {
+	 a = "F";
+  }
+
+  else {
+    a = "B";
+  }
   if (guesschar[1] == num1) {
     b = "F";
   }
-  if (guesschar[2] == num1) {
+  else if (guesschar[2] == num1) {
     c = "F";
   }
-  if (guesschar[0] == num2) {
-    a = "F";
-  }
-  if (guesschar[0] == num3) {
-    a = "F";
-  }
-  if (guesschar[0] != num1 or num2 or num3) {
-    a = "B";
-  }
   
-  if (guesschar[1] == num2) {
+  else if (guesschar[1] == num2) {
     b = "P";
   }
-  if (guesschar[1] == num3) {
+  else if (guesschar[1] == num3) {
     b = "F";
   }
-  if (guesschar[1] != num1 or num2 or num3) {
+  else if (guesschar[1] != num1 && num2 && num3) {
     b = "B";
   }
   
-  if (guesschar[2] == num2) {
+  else if (guesschar[2] == num2) {
     c = "F";
   }
-  if (guesschar[2] == num3) {
+  else if (guesschar[2] == num3) {
     c = "P";
   }
-  if (guesschar[2] != num1 or num2 or num3) {
+  else if (guesschar[2] != num1 && num2 && num3) {
     c = "B";
   }
-  if (order == 1) {
+  else if (order == 1) {
     response = a + b + c;
   }
   else if (order == 2) {
