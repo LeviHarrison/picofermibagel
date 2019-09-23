@@ -86,6 +86,8 @@ cout << "Enter your guess: " << endl;
   cin >> guess;
   /* Checks if input is three characters: */
   if (guess.length() == 3) {
+	  /* Adds 1 to the integer attemps: */
+	attempts++;
 	/* Assigns each character of the guess to a seperate string: */
 	  digit1 = guess[0];
 	  digit2 = guess[1];
