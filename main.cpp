@@ -37,12 +37,15 @@ int attempts;
 void char1() {
 	if (digit1 == num1) {
 		a = "P";
+		return;
 	}
 	else if (digit1 == num2) {
 		a = "F";
+		return;
 	}
 	else if (digit1 == num3) {
 		a = "F";
+		return;
 	}
 
 	else {
@@ -52,12 +55,15 @@ void char1() {
 void char2() {
 	if (digit2 == num1) {
 		b = "F";
+		return;
 	}
 	else if (digit2 == num2) {
 		b = "P";
+		return;
 	}
 	else if (digit2 == num3) {
 		b = "F";
+		return;
 	}
 
 	else {
@@ -67,12 +73,15 @@ void char2() {
 void char3() {
 	if (digit3 == num1) {
 		c = "F";
+		return;
 	}
 	else if (digit3 == num2) {
 		c = "F";
+		return;
 	}
 	else if (digit3 == num3) {
 		c = "P";
+		return;
 	}
 
 	else {
